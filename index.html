@@ -95,7 +95,7 @@
     var loaderUrl = buildUrl + "/666f0ecd6f36204feb144af3cf49167e.loader.js";
     var config = {
       arguments: [],
-      dataUrl: buildUrl + "/03e07dab2fed7e663db4e414ea367e2c.data.unityweb",
+      dataUrl: buildUrl + "/b2e89d174fb272f9f24422e7d83235fa.data.unityweb",
       frameworkUrl: buildUrl + "/4bf7f38e0b23450275b8bdd88bcaaa1c.framework.js.unityweb",
         codeUrl: buildUrl + "/54678fef35a67e5cf72b9c9711515630.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
@@ -111,12 +111,22 @@
       var height = window.innerHeight;
       var aspectRatio = parseFloat("1024") / parseFloat("768");
 
-      if (width / height > aspectRatio) {
-        canvas.style.width = width + 'px';
-        canvas.style.height = width / aspectRatio + 'px';
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        if (height / width > aspectRatio) {
+          canvas.style.height = height + 'px';
+          canvas.style.width = height * aspectRatio + 'px';
+        } else {
+          canvas.style.width = width + 'px';
+          canvas.style.height = width / aspectRatio + 'px';
+        }
       } else {
-        canvas.style.height = height + 'px';
-        canvas.style.width = height * aspectRatio + 'px';
+        if (width / height > aspectRatio) {
+          canvas.style.width = width + 'px';
+          canvas.style.height = width / aspectRatio + 'px';
+        } else {
+          canvas.style.height = height + 'px';
+          canvas.style.width = height * aspectRatio + 'px';
+        }
       }
     }
 
