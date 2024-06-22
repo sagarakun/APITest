@@ -55,7 +55,7 @@
 
 <body>
   <div id="unity-container" class="unity-desktop">
-    <canvas id="unity-canvas" width="2048" height="1536" tabindex="-1"></canvas>
+    <canvas id="unity-canvas" width="1024" height="768" tabindex="-1"></canvas>
     <div id="unity-loading-bar">
       <div id="unity-logo"></div>
       <div id="unity-progress-bar-empty">
@@ -95,7 +95,7 @@
     var loaderUrl = buildUrl + "/666f0ecd6f36204feb144af3cf49167e.loader.js";
     var config = {
       arguments: [],
-      dataUrl: buildUrl + "/0de9c9b29e5dc8f96523466ac8a4b48e.data.unityweb",
+      dataUrl: buildUrl + "/ea516cd0b86a9f6623cf3fa29a419eb6.data.unityweb",
       frameworkUrl: buildUrl + "/4bf7f38e0b23450275b8bdd88bcaaa1c.framework.js.unityweb",
         codeUrl: buildUrl + "/a0499fca9c37d68fe046251a6fb360dc.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
@@ -109,7 +109,7 @@
       var container = document.querySelector("#unity-container");
       var width = window.innerWidth;
       var height = window.innerHeight;
-      var aspectRatio = parseFloat("2048") / parseFloat("1536");
+      var aspectRatio = parseFloat("1024") / parseFloat("768");
 
       if (width / height > aspectRatio) {
         canvas.style.width = width + 'px';
