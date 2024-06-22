@@ -43,7 +43,40 @@
       background-color: #000000;
     }
 
-    #unity-loading-bar,
+    #unity-loading-bar {
+      width: 100%;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+
+    #unity-logo {
+      background: url('TemplateData/unity-logo.png') no-repeat center center;
+      width: 176px;
+      height: 39px;
+      margin: 0 auto 20px auto;
+    }
+
+    #unity-progress-bar-empty {
+      width: 100%;
+      height: 23px;
+      background: url('TemplateData/progress-bar-empty.png') no-repeat center center;
+      background-size: 100% 100%;
+      position: relative;
+    }
+
+    #unity-progress-bar-full {
+      width: 0%;
+      height: 23px;
+      background: url('TemplateData/progress-bar-full.png') no-repeat center center;
+      background-size: 100% 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
     #unity-fullscreen-button,
     #unity-logo,
     #unity-build-title,
@@ -95,7 +128,7 @@
     var loaderUrl = buildUrl + "/666f0ecd6f36204feb144af3cf49167e.loader.js";
     var config = {
       arguments: [],
-      dataUrl: buildUrl + "/ea516cd0b86a9f6623cf3fa29a419eb6.data.unityweb",
+      dataUrl: buildUrl + "/d59326db00606b4b725692446efd132d.data.unityweb",
       frameworkUrl: buildUrl + "/4bf7f38e0b23450275b8bdd88bcaaa1c.framework.js.unityweb",
         codeUrl: buildUrl + "/a0499fca9c37d68fe046251a6fb360dc.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
