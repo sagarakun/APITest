@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1024 height=768 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/666f0ecd6f36204feb144af3cf49167e.loader.js";
+      var loaderUrl = buildUrl + "/19e822aa39b06ba8e19b1edf2820bebc.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/f6754e1b782e999ac5f6caeb7507a2ed.data.unityweb",
+        dataUrl: buildUrl + "/0be833ed8ef3800ecf99db0349eb8194.data.unityweb",
         frameworkUrl: buildUrl + "/4bf7f38e0b23450275b8bdd88bcaaa1c.framework.js.unityweb",
-        codeUrl: buildUrl + "/54678fef35a67e5cf72b9c9711515630.wasm.unityweb",
+        codeUrl: buildUrl + "/f3cf3347c586bc1ea3d41089edaa55fb.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "sagarakun",
         productName: "My project",
@@ -89,8 +89,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "1024px";
-        canvas.style.height = "768px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
